@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.kanban-board {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.kanban-column {
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 200px;
+}
+
+.kanban-card {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease; /* Add smooth transitions to all properties */
+}
+
+/* Define different background colors for different swimlanes */
+.kanban-card.todo {
+  background-color: grey;
+}
+
+.kanban-card.in-progress {
+  background-color: blue;
+}
+
+.kanban-card.done {
+  background-color: green;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
